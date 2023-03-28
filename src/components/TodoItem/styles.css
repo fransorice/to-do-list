@@ -1,0 +1,31 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    margin: 5px 0px;
+}
+p {
+    text-align: center;
+    width: 160px;
+    font-size: 20px;
+}
+span {
+    margin: auto 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.todoCompleted {
+    color: green;
+    text-decoration:line-through;
+}
+.removeButton:hover {
+    color: red;
+}
+.iconCheck:hover {
+    color: green;
+}

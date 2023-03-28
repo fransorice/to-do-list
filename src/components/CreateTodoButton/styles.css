@@ -1,0 +1,8 @@
+.CreateTodoButton{
+    margin: 30px 0px;
+    transform: scale(1.6);
+}
+
+.CreateTodoButton:hover {
+    color: dodgerblue;
+}
