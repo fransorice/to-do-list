@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
-import { GrAddCircle } from "react-icons/gr";
-import { ImCancelCircle } from "react-icons/im";
+import { RxCross2 } from "react-icons/rx";
 import { TodoContext } from '../TodoContext';
+import { AiOutlineCheck } from "react-icons/ai";
 
 const TodoForm = () => {
     const [newTodoValue, setNewTodoValue] = React.useState("");
@@ -25,7 +25,7 @@ const TodoForm = () => {
 
   return (
     <form onSubmit={onSubmit} className="formprueba">
-        <label htmlFor="">Ingresa tu TODO:</label>
+        <label htmlFor="" className='label__title'>Ingresa tu TODO:</label>
         <textarea
             value={newTodoValue}
             onChange={onChange}
@@ -38,13 +38,13 @@ const TodoForm = () => {
                 onClick={onCancel}
                 className='cancelTodo'
             >
-                <ImCancelCircle/>
+                <RxCross2/>
             </button>
             <button
                 type='submit'
                 className='agregarTodo'
             >
-                <GrAddCircle/>
+                <AiOutlineCheck/>
             </button>
         </div>
     </form>
