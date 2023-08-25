@@ -22,6 +22,8 @@ function AppUI() {
 
   return (
     <React.Fragment>
+      {loading ? <p><Loader/></p> : 
+      <>
       <TodoCounter />
       <TodoSearch />
           <TodoList>
@@ -39,6 +41,9 @@ function AppUI() {
               />
             ))}
           </TodoList>
+          </>
+          }
+      
 
           {openModal && (
             <Modal>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { SlPlus } from "react-icons/sl";
 import './styles.css'
+import CreateTodoButtonSVG from '../CreateTodoButtonSVG';
 
 const CreateTodoButton = (props) => {
   const onClickButton = () => {
@@ -11,7 +12,7 @@ const CreateTodoButton = (props) => {
     <span
       className='CreateTodoButton'
       onClick={onClickButton}
-    ><SlPlus/></span>
+    ><CreateTodoButtonSVG/></span>
   )
 }
 
