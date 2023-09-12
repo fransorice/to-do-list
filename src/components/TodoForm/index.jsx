@@ -32,7 +32,7 @@ const TodoForm = () => {
             placeholder='Ir de compras'
             required
         />
-        <div>
+        <div className='div__formButtons'>
             <button
                 type='button'
                 onClick={onCancel}
@@ -42,7 +42,7 @@ const TodoForm = () => {
             </button>
             <button
                 type='submit'
-                className='agregarTodo'
+                className='addTodo'
             >
                 <AiOutlineCheck/>
             </button>
