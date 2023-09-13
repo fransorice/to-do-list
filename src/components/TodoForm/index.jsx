@@ -24,7 +24,7 @@ const TodoForm = () => {
     };
 
   return (
-    <form onSubmit={onSubmit} className="formprueba">
+    <form onSubmit={onSubmit} className="form__createTodo">
         <label htmlFor="" className='label__title'>Ingresa tu TODO:</label>
         <textarea
             value={newTodoValue}

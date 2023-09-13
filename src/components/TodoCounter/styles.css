@@ -1,5 +1,17 @@
 .title {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.span__completedTodos {
+    font-size: 1em;
+    cursor: auto;
+    color: rgb(12, 136, 12);
+}
+
+.span__totalTodos {
+    font-size: 1em;
+    cursor: auto;
+    color: rgb(20, 175, 223);
 }

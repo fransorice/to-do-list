@@ -1,4 +1,4 @@
-.Btn {
+.button__createTodoButton {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -11,14 +11,14 @@
     overflow: hidden;
     transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: black;
+    background: rgba(255, 255, 255, 0.06);
   }
   
   /* plus sign */
   .sign {
     width: 100%;
     font-size: 2em;
-    color: white;
+    color: rgb(0, 0, 0);
     transition-duration: .3s;
     display: flex;
     align-items: center;
@@ -30,30 +30,31 @@
     right: 0%;
     width: 0%;
     opacity: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
+    font-weight: 600;
     transition-duration: .3s;
   }
   /* hover effect on button width */
-  .Btn:hover {
+  .button__createTodoButton:hover {
     width: 100px;
     border-radius: 0px;
     transition-duration: .3s;
   }
   
-  .Btn:hover .sign {
+  .button__createTodoButton:hover .sign {
     width: 30%;
     transition-duration: .3s;
     padding: 0px 5px;
   }
   /* hover effect button's text */
-  .Btn:hover .text {
+  .button__createTodoButton:hover .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
     padding-right: 5px;
   }
   /* button click effect*/
-  .Btn:active {
+  .button__createTodoButton:active {
     transform: translate(2px ,2px);
   }

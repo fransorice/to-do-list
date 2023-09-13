@@ -20,12 +20,12 @@ span {
     cursor: pointer;
 }
 .todoCompleted {
-    color: green;
+    color: rgb(12, 136, 12);
     text-decoration:line-through;
 }
 .removeButton:hover {
     color: red;
 }
 .iconCheck:hover {
-    color: green;
+    color: rgb(12, 136, 12);
 }

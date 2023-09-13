@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
-import { SlCheck, SlMinus } from "react-icons/sl";
+import DeleteTodoButtonSVG from '../DeleteTodoButtonSVG';
+import CompleteTodoButtonSVG from '../CompleteTodoButtonSVG';
 
 const TodoItem = (props) => {
   return (
@@ -8,12 +9,12 @@ const TodoItem = (props) => {
         <span
           className={`iconCheck ${props.completed && 'todoCompleted'}`}
           onClick={props.onComplete}
-        ><SlCheck/></span>
+        ><CompleteTodoButtonSVG/></span>
         <p className={`${props.completed && 'todoCompleted'}`}>{props.text}</p>
         <span 
           className='removeButton'
           onClick={props.onDelete}
-        ><SlMinus/></span>
+        ><DeleteTodoButtonSVG/></span>
     </li>
   )
 }

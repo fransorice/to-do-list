@@ -6,7 +6,7 @@ const TodoCounter = () => {
   const {totalTodos, completedTodos} = React.useContext(TodoContext);
 
   return (
-    <h2 className='title'>Has completado {completedTodos} de {totalTodos} ToDo's</h2>
+    <h2 className='title'>Has completado <span className='span__completedTodos'>{completedTodos}</span> de <span className='span__totalTodos'>{totalTodos}</span> ToDo's</h2>
   )
 }
 

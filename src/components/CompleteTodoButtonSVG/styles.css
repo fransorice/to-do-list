@@ -1,0 +1,56 @@
+.button__completeTodoButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(11, 228, 40, 0.411);
+    border: none;
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svgCompleteIcon {
+    width: 18px;
+    transition-duration: .3s;
+  }
+  
+  .svgCompleteIcon path {
+    fill: white;
+  }
+  
+  .button__completeTodoButton:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(12, 136, 12);
+    align-items: center;
+  }
+  
+  .button__completeTodoButton:hover .svgCompleteIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+  
+  .button__completeTodoButton::before {
+    position: absolute;
+    top: -20px;
+    content: "Complete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+  
+  .button__completeTodoButton:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
