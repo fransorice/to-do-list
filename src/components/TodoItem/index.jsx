@@ -5,7 +5,7 @@ import CompleteTodoButtonSVG from '../CompleteTodoButtonSVG';
 
 const TodoItem = (props) => {
   return (
-    <li>
+    <li className={`${props.completed && 'li__todoCompleted'}`}>
         <span
           className={`iconCheck ${props.completed && 'todoCompleted'}`}
           onClick={props.onComplete}

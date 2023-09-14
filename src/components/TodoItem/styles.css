@@ -21,7 +21,10 @@ span {
 }
 .todoCompleted {
     color: rgb(12, 136, 12);
-    text-decoration:line-through;
+    text-decoration: line-through;
+}
+.li__todoCompleted {
+    background: rgba(15, 165, 15, 0.267);
 }
 .removeButton:hover {
     color: red;

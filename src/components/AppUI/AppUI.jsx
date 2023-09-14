@@ -8,6 +8,7 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 import { TodoForm } from '../TodoForm';
 import Loader from '../Loader';
+import EmptyListAnimation from '../EmptyListAnimation';
 
 function AppUI() {
   const {
@@ -29,7 +30,7 @@ function AppUI() {
           <TodoList>
             {error && <p>Hubo un error...</p>}
             {loading && <p><Loader/></p>}
-            {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO!</p>}
+            {(!loading && !searchedTodos.length) && <EmptyListAnimation/>}
             
             {searchedTodos.map(todo => (
               <TodoItem
